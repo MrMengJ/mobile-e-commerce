@@ -132,6 +132,7 @@ $('.shade_full .content_box_bt').on('click', function () {
 //改变商品数量
 //增加数量
 $('.changeNum_right').on('click', function () {
+    // 点击加号后,减号呈现高亮状态
     // var val = parseInt($(this).siblings('.goods_amount').val())+1;
     var val = parseInt($(this).prev().val()) + 1;
     $(this).prev().val(val);
@@ -139,9 +140,15 @@ $('.changeNum_right').on('click', function () {
 });
 //减少数量
 $('.changeNum_left').on('click', function () {
-    var val = parseInt($(this).next().val()) - 1;
+    var val = parseInt($(this).next().val()) - 1;//获取的是点击事件之前的状态，所以需要减1;
     if (val > 0) {
         $(this).next().val(val);
+    }
+    // var valn = parseInt($(this).next().val(val));
+    // 当商品数量为1时,减号去除高亮状态
+    // 为什么要是'=='才有效，'='没效，暂时还没搞明白
+   if( val == 1 ){
+        $(this).css('backgroundPosition', '-16px -115px')
     }
 });
 //数量不可以为非正整数
