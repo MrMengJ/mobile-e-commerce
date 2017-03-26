@@ -186,11 +186,68 @@ html {
     /*transform: translateY(-50%);*/
     /*transform: translateX(-50%)*/
     /*这个能够实现水平垂直居中，但父元素需要知道是定高，能兼容到IE8+*/
-    margin:auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right:0;
-    bottom:0;
+    /*margin:auto;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right:0;*/
+    /*bottom:0;*/
+    /*display: none;*/
+    /*由于我们要的是定位在屏幕中的正中央，所以需要实用固定定位*/
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin: -75px 0 0 -50px;
     display: none;
+}
+
+/*取消关注成功提醒*/
+.cancel_hint{
+    width: 150px;
+    height: 100px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 200;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    text-align: center;
+    /*这个只能实现垂直居中 且兼容性不好*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translateY(-50%);*/
+    /*transform: translateX(-50%)*/
+    /*这个能够实现水平垂直居中，但父元素需要知道是定高，能兼容到IE8+*/
+    /*margin:auto;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right:0;*/
+    /*bottom:0;*/
+    /*display: none;*/
+    /*由于我们要的是定位在屏幕中的正中央，所以需要实用固定定位*/
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin: -75px 0 0 -50px;
+    display: none;
+
+}
+.cancel_hint .wrap{
+    width:100%;
+    height: 60px;
+    margin-top:20px;
+    text-align: center;
+}
+.cancel_hint span{
+    display: block;
+}
+.cancel_hint .cancel_icon{
+    background: url("../img/cancel_hint.png") no-repeat;
+    background-size: 30px 30px;
+    width:30px;
+    height: 30px;
+    margin: 0 auto 10px;
 }

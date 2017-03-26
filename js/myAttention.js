@@ -28,8 +28,14 @@ $('.attention_pro li .cancel_attention').on('click',function () {
 
 //添加至购物车提醒
 $('.pro_bt_rf').on('click',function () {
-    $('.shopcar_hint').show(1000);
+    $('.shopcar_hint').show(600);
     setTimeout(function () {
-        $('.shopcar_hint').hide(1000)
-    },3000)});
+        $('.shopcar_hint').hide(600)
+    },2000)});
 
+//取消关注提醒
+$('.cancel_attention').on('click',function () {
+    $('.cancel_hint').show(600);
+    setTimeout(function () {
+        $('.cancel_hint').hide(600)
+    },2000)});
