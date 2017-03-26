@@ -148,3 +148,29 @@
     background-size: 20px 20px;
 }
 
+/*固定底部通栏*/
+#footBar{
+    width:100%;
+    position: fixed;
+    left:0;
+    bottom: 0;
+
+}
+#footBar .footBar_content{
+    min-width: 300px;
+    max-width: 640px;
+    height: 54px;
+    background: #f0f0f0;
+    margin: 0 auto;
+}
+#footBar a{
+    display: inline-block;
+    /*width:25%;*/
+    /*width:25%为何不行呢？？*/
+    width:24%;
+    height:54px;
+    text-align: center;
+}
+#footBar a img{
+    height: 100%;
+}
