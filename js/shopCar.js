@@ -147,7 +147,7 @@ $('.changeNum_left').on('click', function () {
 //数量不可以为非正整数
 $(".changeNum input").blur(function () {
     var val = parseInt($(this).val());
-    if (val = 1) {
+    if (val < 1) {
         $(this).val(1)
         alert('选择数量不可以为非正整数喔')
     }
@@ -282,7 +282,7 @@ $('.win .submit').on('click', function () {
         'transform': 'translateY(0px) rotate(0deg)'
     })
     $('.deleteBox.active').parent().parent().parent().parent().html('').css('display','none');
-    $('.delete_box.active').removeClass('active');
+    $('.deleteBox.active').removeClass('active');
 })
 
 
