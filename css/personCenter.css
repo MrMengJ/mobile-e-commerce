@@ -1,0 +1,150 @@
+
+
+/*头部我的信息*/
+.my_info{
+    background: url("../img/my_info_bg.jpg") no-repeat;
+    height: 140px;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.my_info .my_portrait{
+    height: 65%;
+    position: relative;
+    padding: 17px 0 17px 15px;
+    position: relative;
+
+}
+.my_info .my_portrait .portrait_img{
+    width:56px;
+    height: 56px;
+    position: absolute;
+    left:15px;
+    top:17px;
+    
+}
+.my_info .my_portrait .portrait_img img{
+    width:100%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.my_info .my_portrait .name{
+    font-size: 18px;
+    padding-left: 90px;
+    margin-top: 19px;
+    
+}
+.my_info .setting{
+    padding:5px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    right:20px;
+    top:20px;
+    cursor: pointer;
+}
+
+.my_info ul{
+    background: rgba(0,0,0,0.3);
+    height: 35%;
+    font-size: 13px;
+}
+.my_info li{
+    display: block;
+    float: left;
+    width: 33.33%;
+    border-right: 0.5px solid #fff;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+
+/*我的订单*/
+.myOrder{
+    background: #fff;
+    height: 70px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.myOrder li{
+    float: left;
+    width:25%;
+    height:100%;
+    text-align: center;
+    line-height: 50px;
+}
+.myOrder li span:first-child{
+    display: block;
+    width:30px;
+    height: 30px;
+    margin:0 auto;
+}
+.order_state_img_all{
+    background: url("../img/all_order.png") no-repeat;
+    background-size: 30px 30px;
+}
+.order_state_img_pre{
+    background: url("../img/pre_order.png") no-repeat;
+    background-size: 30px 30px;
+}
+.order_state_img_loading{
+    background: url("../img/loading_order.png") no-repeat;
+    background-size: 30px 30px;
+}
+.order_state_img_finished{
+    background: url("../img/finished_order.png") no-repeat;
+    background-size: 30px 30px;
+}
+.myOrder li span:last-child {
+    position: relative;
+    bottom:8px;
+}
+
+.some_other{
+
+}
+.some_other ul{
+    background: #fff;
+}
+.some_other li{
+    font-size: 14px;
+    border-bottom:0.5px solid #f0f2f5;
+    height:44px;
+    line-height: 44px;
+    padding-left: 10px;
+    position: relative;
+}
+.some_other .shopcar .icon_shopcar{
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    background: url("../img/icon_shopcar.png") no-repeat;
+    -webkit-background-size:20px 20px;
+    background-size: 20px 20px;
+    margin-right: 10px;
+}
+.some_other .category_search .icon_category{
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    background: url("../img/icon_category.png") no-repeat;
+    -webkit-background-size:20px 20px;
+    background-size:20px 20px;
+    margin-right: 10px;
+}
+
+.some_other .icon_go{
+    position: absolute;
+    right:15px;
+    top:10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/go.png");
+    background-size: 20px 20px;
+}
+

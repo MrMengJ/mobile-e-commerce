@@ -1,0 +1,212 @@
+body{
+    font-weight: 200;
+}
+
+/*导航区*/
+.nav {
+    background: #fff;
+    margin-bottom: 10px;
+    color: #9a9a9a;
+}
+.nav li{
+    float: left;
+    width:25%;
+    text-align: center;
+    cursor: pointer;
+}
+.nav li span{
+    display: block;
+    padding:10px 0;
+    width:50%;
+    height: 100%;
+    border-bottom:2px solid transparent;
+    margin: 0 auto;
+}
+.nav li span.active{
+    border-color: #f23030;
+    color: #f23030;
+}
+
+
+/*主内容区*/
+.main_content{
+
+}
+.main_content ul{
+    display: none;
+}
+.main_content ul.active{
+    display: block;
+}
+.main_content li{
+    margin-bottom: 10px;
+    background: #fff;
+    position: relative;
+}
+/*商店信息*/
+.shop_information{
+    height: 35px;
+    position: relative;
+}
+.shop_information span{
+    display: inline-block;
+    line-height: 35px;
+    height: 35px;
+}
+.shop_information .shop_logo{
+    width: 14px;
+    height: 9px;
+    background: url("../img/shop_logo.png") no-repeat;
+    background-size: 14px 9px;
+    margin:13px;
+}
+.shop_information .shop_name{
+    position: absolute;
+    left: 35px;
+}
+.shop_information .delete_box{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    right:8px;
+    background:url("../img/delete_box.png");
+    background-size: 15px 15px;
+    cursor: pointer;
+}
+
+
+/*产品信息*/
+.pro_information{
+    height: 100px;
+    padding: 20px 0;
+    background: #f5f5f5;
+    position: relative;
+}
+.pro_information .pro_img{
+    position: absolute;
+    top:20px;
+    left:20px;
+    width: 60px;
+    height:60px;
+}
+.pro_information .pro_img img{
+    width:100%;
+}
+.pro_information .decription{
+    position: relative;
+    margin-left:100px;
+    -webkit-line-clamp:2;/*限制在一个块元素显示的文本的行数  兼容性不是很好*/
+}
+.pay_price{
+    padding-left: 10px;
+    height:35px;
+    line-height: 35px;
+}
+.pay_price span{
+    font-weight: 500;
+}
+/*完成标志图标*/
+.finished_icon{
+    position: absolute;
+    width:64px;
+    height: 64px;
+    top:10px;
+    right:20px;
+}
+.finished_icon img{
+    width: 100%;
+}
+
+/*弹窗*/
+.win{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    display: none;
+    z-index: 1001;
+}
+
+.win_box{
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+
+}
+.win_box .win_box_con{
+    line-height: 74px;/*高度自动确定*/
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+    color: #555555;
+    text-align: center;
+    margin: 0 20px;
+}
+.win_box .win_box_btn{
+    padding: 10px 20px;
+
+}
+.win_box .win_box_btn .cancel{
+    height: 36px;
+    width: 45%;
+    display: block;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+.win_box .win_box_btn .submit{
+    height: 36px;
+    width: 45%;
+    display: block;
+    background: #f15353;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 10%;
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, -3000px, 0px);
+        -webkit-transform: translate3d(0px, -3000px, 0px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(0px, 25px, 0px);
+        -webkit-transform:translate3d(0px, 25px, 0px);
+    }
+    75% {
+        transform: translate3d(0px, -10px, 0px);
+        -webkit-transform:translate3d(0px, -10px, 0px);
+    }
+    90% {
+        transform: translate3d(0px, 5px, 0px);
+        -webkit-transform:translate3d(0px, 5px, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform:none;
+    }
+}
+.bounceInDown {
+    animation-name: bounceInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}

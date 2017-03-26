@@ -1,0 +1,198 @@
+body{
+    color: #333;
+    font-weight: 200;
+}
+.page{
+    width:100%;
+}
+.page .loginPage{
+    min-width: 300px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/*输入信息区*/
+.page .loginPage .import{
+    width:100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+.page .loginPage .import div{
+    margin-bottom: 15px;
+}
+.page .loginPage .username{
+    width: 100%;
+    margin-top: 30px;
+}
+.page .loginPage .import input{
+    display: block;
+    width:100%;
+    height:43px;
+    padding-left: 10px;
+    border:1px solid #bbb;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.page .loginPage .securityCode span{
+    display: block;
+    width:75px;
+    height: 22px;
+    position: absolute;
+    bottom: 10px;
+    right:1px;
+    border-left: 1px solid #bbb;
+    text-align: right;
+}
+.page .loginPage .securityCode img{
+    width:80%;
+    height: 100%;
+}
+
+
+/*登录按钮*/
+.page .loginBtn{
+    display: block;
+    /*height:45px;*/
+    background: #eee;
+    text-align: center;
+    line-height: 45px;
+    color: #848689;
+    margin-bottom: 20px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.page .loginBtn.active{
+    color: #fff;
+    background: #f23030;
+}
+.page .easyLogin{
+    background: #fff;
+    text-align: center;
+    color: #f23030;
+    line-height: 45px;
+    border:1px solid #f23030;
+    margin-bottom: 20px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+
+/*一个月免登录*/
+.page .fastLogin{
+    position: relative;
+    margin-bottom: 20px;
+}
+.page .fastLogin p{
+    margin-left:25px;
+    cursor: default;
+}
+.page .fastLogin span{
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../img/iconBg.png") no-repeat 0 -85px;
+    background-size: 100% auto;
+    position: absolute;
+    left:0;
+    top:-2px;
+}
+.page .fastLogin span.active{
+    background: url("../img/iconBg.png") no-repeat 0 -105px;
+    background-size: 100% auto;
+}
+
+.page .afterLogin{
+    position: relative;
+    margin-bottom: 20px;
+}
+/*找回密码*/
+.page .findPsw{
+    display: block;
+    position: relative;
+}
+.page .findPsw span:first-child{
+     display: inline-block;
+     background: url("../img/iconBg.png") no-repeat 0 -23px;
+     background-size: 100% auto;
+     width:22px;
+     height: 22px;
+ }
+.page .findPsw span:last-child{
+    position: absolute;
+    left: 25px;
+    top:2px;
+}
+
+/*快速注册*/
+.page .fastRegister{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.page .fastRegister span:first-child{
+    display: inline-block;
+    background: url("../img/iconBg.png") no-repeat 0 -42px;
+    background-size: 100% auto;
+    width:22px;
+    height: 22px;
+    margin-right: 2px;
+}
+.page .fastRegister span:last-child{
+    position: relative;
+    right: 0;
+    top: -6px;
+}
+
+
+/*其他登录方式*/
+.page .line{
+    height: 22px;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.page .line span{
+    display: inline-block;
+    position: relative;
+    top:8px;
+    left: 0;
+    width: 130px;
+    background: #f5f5f5;
+    color: #616161;
+    font-weight: 500;
+}
+
+.page .otherWay{
+    position: relative;
+}
+.page .wayQ{
+    display: block;
+    position: absolute;
+    top: 0;
+    left:40%;
+}
+.page .wayQ .way_logo{
+    display: block;
+    background: url("../img/iconBg.png") no-repeat 0 -129px;
+    background-size: 100% auto;
+    width:22px;
+    height: 22px;
+}
+.page .wayW{
+    display: block;
+    position: absolute;
+    top: 0;
+    right:40%;
+}
+.page .wayW .way_logo{
+    display: block;
+    background: url("../img/iconBg.png") no-repeat 0 -155px;
+    background-size: 100% auto;
+    width:22px;
+    height: 22px;
+}

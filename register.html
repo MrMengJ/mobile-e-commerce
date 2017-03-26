@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>快速注册</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<header class="header">
+<div class="topBar">
+    <div class="icon_back" onclick="history.go(-1)"></div>
+    <h2>快速注册</h2>
+    <div class="icon_menu"></div>
+</div>
+<div class="header_bar">
+    <ul class="clearfix">
+        <li><a href="index.html">
+            <span></span>
+            <strong>首页</strong>
+        </a></li>
+        <li><a href="category.html">
+            <span></span>
+            <strong>分类搜索</strong>
+        </a></li>
+        <li><a href="shopCar.html">
+            <span></span>
+            <strong>购物车</strong>
+        </a></li>
+        <li><a href="personCenter.html">
+            <span></span>
+            <strong>个人中心</strong>
+        </a></li>
+    </ul>
+</div>
+</header>
+<section class="page">
+    <div class="registerPage">
+        <div class="import">
+            <div class="securityCode">
+                <input type="search" placeholder="请输入验证码">
+                <span>
+                    <img src="img/security_code03.jpg" alt="">
+                </span>
+            </div>
+            <div class="phoneNum">
+                <div>
+                <input type="search" placeholder="请输入手机号" value="">
+                </div>
+                <botton class="codeBtn">获取手机验证码</botton>
+            </div>
+            <div class="phoneNumCode">
+                <input type="search" placeholder="请输入收到的验证码">
+            </div>
+
+            <div class="password">
+                <input type="search" placeholder="请设置6-20位登录密码">
+            </div>
+
+        </div>
+        <a href="personCenter.html" class="registerBtn">
+            <span>注  册</span>
+        </a>
+    </div>
+</section>
+<script src="js/jquery.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

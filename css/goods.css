@@ -1,0 +1,328 @@
+/*媒体查询定义全局字体大小*/
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 14px;
+    }
+}
+html {
+    font-size: 14px;
+}
+
+/*搜索框*/
+
+.search{
+    width: 100%;
+    position: relative;
+    background: #fff;
+}
+.search .more_category{
+    display: block;
+    width: 5.6%;
+    position: absolute;
+    left:15px;
+    /*top:50%加上transform: translateY(-50%);可以让元素垂直居中*/
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.search .more_category img{
+    width:100%;
+}
+.search .search_right{
+    width:85%;
+    margin-left:13% ;
+    position: relative;
+    line-height: 6.0;
+}
+.search .search_right input{
+    width: 100%;
+    border-radius: 10px;
+    background: #efefef;
+    padding-left: 30px;
+    line-height: 4.0;
+}
+.search .search_right .icon_search{
+    background: url("../img/icon_search.png");
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top:40%;
+    left:10px;
+}
+
+
+
+
+/*轮播图*/
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner ul {
+    width: 1000%;
+    /*ul设置relative是为了让轮播图自动播放，通过ul不同的left值来实现*/
+    position: relative;
+}
+
+.banner ul li {
+    width: 10%;
+    float: left;
+}
+
+.banner ul li img {
+    width: 100%;
+    display: block;
+}
+
+/*点*/
+.banner .showNav {
+    width: 80px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: 10px;
+}
+
+.banner .showNav li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    float: left;
+}
+
+.banner .showNav li:first-child {
+    margin-left: 0;
+}
+
+.banner .showNav .active {
+    background: #ffffff;
+}
+
+/*导航栏*/
+.nav {
+    height: 150px;
+    width: 100%;
+    /*min-width:300px;*/
+    /*max-width: 640px;*/
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0 auto;
+    /*padding: 0 3.125%;*/
+    background: #fff;
+    padding-top: 11px;
+}
+
+.nav ul {
+    width: 100%;
+}
+
+.nav ul li {
+    width: 25%;
+    height: 69px;
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.nav ul li a img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.nav ul li a p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+}
+
+/*商品区块*/
+.product {
+    /*margin: 0 5px;*/
+}
+
+/*公共使用的商品盒子*/
+.product .product_box {
+    box-shadow: 0 0 1px 1px #e0e0e0;
+    margin-top: 8px;
+    background: #fff;
+}
+
+/*盒子的上面*/
+.product .product_box .product_top {
+    height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+
+/*没有边框*/
+.product .product_box .product_top.no_bor {
+    border-bottom: none;
+}
+
+.product .product_box .product_top h3 {
+    font-size: 15px;
+    color: #666;
+    padding-left: 15px;
+    font-weight: inherit;
+    line-height: 32px;
+}
+
+.product .product_box .product_top h3::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+
+.product .product_box .product_bot {
+
+}
+
+/*秒杀*/
+.secondKill {
+
+}
+
+.secondKill .secondKill_left {
+    float: left;
+}
+
+.secondKill .secondKill_left .sk_icon {
+    background: url("../img/seckill-icon.png") no-repeat;
+    background-size: 16px 20px;
+    width: 16px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-left: 8px;
+    margin-top: 6px;
+
+}
+
+.secondKill .secondKill_left .sk_name {
+    font-size: 15px;
+    color: #d8505c;
+    font-weight: inherit;
+    float: left;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+.secondKill .secondKill_left .sk_time {
+    float: left;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.secondKill .secondKill_left .sk_time .num {
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+
+.secondKill .secondKill_left .sk_time .str {
+    display: block;
+    width: 4px;
+    height: 15px;
+    text-align: center;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+
+/*更多*/
+.secondKill .secondKill_right {
+    float: right;
+}
+
+.secondKill .secondKill_right a {
+    line-height: 32px;
+    margin-right: 10px;
+}
+
+/*三个商品*/
+.secondKill .product_bot {
+    width: 100%;
+}
+
+.secondKill .product_bot ul {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.secondKill .product_bot ul li {
+    width: 33.333%;
+    float: left;
+}
+
+.secondKill .product_bot ul li a {
+    width: 100%;
+}
+
+.secondKill .product_bot ul li a .img_box {
+    width: 100%;
+    border-right: 1px solid #e0e0e0;
+}
+
+.secondKill .product_bot ul li:last-child a .img_box {
+    border-right: none;
+}
+
+.secondKill .product_bot ul li a .img_box img {
+    width: 64%;
+    display: block;
+    margin: 0 auto;
+}
+
+.secondKill .product_bot ul li a .now_price {
+    color: #d8505c;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.secondKill .product_bot ul li a .old_price {
+    font-size: 12px;
+    text-decoration: line-through; /*删除线*/
+    margin-top: 3px;
+    text-align: center;
+    color: #888;
+}

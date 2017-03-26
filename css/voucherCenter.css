@@ -1,0 +1,272 @@
+
+html{
+    font-size: 40px;
+}
+@media screen and (max-width:640px){
+    html{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 520px){
+    html{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 380px){
+    html{
+        font-size: 24px;
+    }
+}
+
+body{
+    background: #f0f2f5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.header{
+    width:100%;
+}
+.header .header_top{
+    width:100%;
+    height:44px;
+    position: relative;
+    background: #f0f2f5;
+}
+.header .header_top div{
+    width:40px;
+    height: 44px;
+    position: absolute;
+    text-align: center;
+}
+.header .header_top div:first-child {
+    top:0;
+    left:0;
+    text-align: center;
+    line-height: 44px;
+}
+.header .header_top div:first-child span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/iconBg.png") no-repeat 0 -64px;
+    -webkit-background-size:22px 250px;
+    background-size:22px 250px;
+}
+.header .header_top .cz{
+    top:0;
+    left:50%;
+    margin-left: -14px;
+    line-height: 44px;
+    font-size: 14px;
+}
+.header .header_top div:last-child{
+    right:0;
+    bottom:0;
+    line-height: 44px;
+}
+.header .header_top div:last-child img{
+    width: 20px;
+    height: 20px;
+}
+
+/*默认隐藏的头部header_ban*/
+.header .header_bar{
+    height: 56px;
+    background: #404042;
+    /*display: none;*/
+}
+.header .header_bar ul{
+    height: 100%;
+}
+.header .header_bar li{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.header .header_bar a{
+    font-size: 12px;
+    color: #f0f0f0;
+}
+.header .header_bar span{
+    display: block;
+    width:30px;
+    height:30px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+strong{
+    margin:0 auto;
+}
+.header .header_bar li:nth-of-type(1) span{
+    background: url("../img/jd-sprites.png") no-repeat -30px -27px;
+    background-size: 200px 200px;
+}
+.header .header_bar li:nth-of-type(2) span{
+    background: url("../img/jd-sprites.png") no-repeat -60px -27px;
+    background-size: 200px 200px;
+}.header .header_bar li:nth-of-type(3) span{
+     background: url("../img/jd-sprites.png") no-repeat -90px -27px;
+     background-size: 200px 200px;
+ }.header .header_bar li:nth-of-type(4) span{
+      background: url("../img/jd-sprites.png") no-repeat -120px -27px;
+      background-size: 200px 200px;
+  }
+
+  /*轮播图*/
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.banner ul{
+    width: 1000%;
+    /*ul设置relative是为了让轮播图自动播放，通过ul不同的left值来实现*/
+    position: relative;
+}
+.banner ul li{
+    width: 10%;
+    height:75px;
+    float: left;
+}
+.banner ul li img{
+    width: 100%;
+    height:100%;
+    display: block;
+}
+
+/*点*/
+.banner .showNav{
+    width: 32px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -16px;
+    bottom: 10px;
+}
+
+.banner .showNav li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    float: left;
+}
+.banner .showNav li:first-child{
+    margin-left: 0;
+}
+.banner .showNav .active{
+    background: #ffffff;
+}
+
+/*nav块*/
+.nav{
+    width:100%;
+    height:1.8rem;
+    line-height: 1.8rem;
+    background: #FFFFFF;
+    margin-bottom: .32rem;
+}
+.nav div{
+    width:33%;
+    height: 100%;
+    text-align: center;
+}
+.nav div a{
+    display: inline-block;
+    width: 60%;
+    height:100%;
+    border-bottom: 2px solid transparent;
+    font-size: .56rem;
+}
+.nav div a.active{
+    color: #f23030;
+    border-bottom: 2px solid #f23030;
+}
+
+
+/*输入号码*/
+.phoneNumber{
+    width: 100%;
+    margin-bottom: .32rem;
+}
+.phoneNumber input{
+    width:100%;
+    padding:.56rem;
+    font-size: 0.5rem;
+}
+
+
+/*冲值面值*/
+.value{
+    width:100%;
+    background: #FFFFFF;
+    font-size: .45rem;
+    cursor: pointer;
+    margin-bottom: .32rem;
+}
+.value ul{
+    width:100%;
+    display: none;
+}
+.value ul.active{
+    display: block;
+}
+.value li{
+    width:33.33%;
+    box-sizing: border-box;
+    padding:.6rem;
+    float: left;
+    text-align: center;
+}
+.value li div{
+    width:100%;
+    height: 1.8rem;
+    border:1px solid #232326;
+    -webkit-border-radius:0.1rem;
+    -moz-border-radius:0.1rem;
+    border-radius:0.1rem;
+    line-height: 1.8rem;
+}
+.value li div.active{
+    background: #f23030;
+    border-color: #f23030;
+    color: #ffffff;
+}
+
+
+/*下单*/
+.buy{
+    width: 100%;
+    height:1.8rem;
+    position: fixed;
+    left:0;
+    bottom: 0;
+}
+.buy .buy_box{
+    min-width: 300px;
+    max-width: 640px;
+    height:100%;
+    margin:0 auto;
+    background: #FFFFFF;
+}
+.buy .buy_box div{
+    float: right;
+    height: 100%;
+    line-height: 1.8rem;
+    text-align: center;
+}
+.buy .buy_box div:last-child{
+    color: #f23030;
+    font-size: .45rem;
+    padding: 0 .4rem;
+}
+.buy .buy_box div:first-child{
+    color: #ffffff;
+    font-size: .48rem;
+    background: #bfbfbe;
+    width:4.5rem;
+    cursor: default;
+}
+.buy .buy_box div.active{
+    background: #f23030;
+}

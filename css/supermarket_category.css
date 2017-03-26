@@ -1,0 +1,53 @@
+/*媒体查询定义全局字体大小*/
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 14px;
+    }
+}
+html {
+    font-size: 14px;
+}
+
+
+
+/*产品详细分类*/
+.product{
+
+}
+.product .wrap{
+    padding-top: 20px;
+    margin-bottom: 12px;
+    background: #fff;
+}
+.product .wrap p{
+    height:20px;
+    line-height: 20px;
+    padding-left: 20px;
+}
+.product .wrap ul{
+
+}
+.product .wrap li{
+    display: block;
+    width:25%;
+    padding:1% 5%;
+    float: left;
+    text-align: center;
+}
+.product .wrap li a{
+    display: block;
+    width:100%;
+}
+.product .wrap li a img{
+    width:100%
+}

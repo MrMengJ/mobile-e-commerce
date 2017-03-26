@@ -1,0 +1,226 @@
+html{
+    font-size: 40px;
+}
+@media screen and (max-width:640px){
+    html{
+        font-size: 36px;
+    }
+}
+@media screen and (max-width: 520px){
+    html{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 3100px){
+    html{
+        font-size: 24px;
+    }
+}
+
+body{
+    background: #f3f5f7;
+}
+/*头部开始*/
+.header{
+    width:100%;
+}
+
+.header .topBar .lqzx{
+    top:0;
+    left:50%;
+    margin-left: -14px;
+    line-height: 44px;
+    font-size: 14px;
+    width:4em;
+    height: 44px;
+    position: absolute;
+    text-align: center;
+}
+
+/*选择栏*/
+.bar{
+    width: 100%;
+    height:44px;
+    background: #ffffff;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: .32rem;
+}
+.bar ul{
+    width:100%;
+    height: 100%;
+}
+.bar li{
+    float: left;
+    width:16.66%;
+    height:100%;
+}
+.bar li span{
+    display:inline-block;
+    height: 100%;
+    padding:0 1em;
+    border-bottom: 2px solid transparent;
+}
+.bar li span.active{
+    color: #f23030;
+    border-bottom-color: #f23030;
+}
+
+/*优惠券部分*/
+.yhq{
+    width: 100%;
+}
+.yhq .contaier{
+    width:100%;
+}
+.yhq .container ul{
+    width: 100%;
+    display: none;
+}
+.yhq .container ul.active{
+    display: block;
+}
+.yhq .container li{
+    width: 100%;
+    height: 80px;
+    margin-bottom: .32rem;
+    background: #FFFFFF;
+    position: relative;
+}
+.yhq .container .content_lf{
+    width: 100%;
+    height: 100%;
+    padding:0 15px;
+}
+.yhq .container .content_lf .content_img{
+    width:70px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    margin-right: 10px;
+}
+.yhq .container .content_lf  img{
+    width: 100%;
+    height: 100%;
+}
+.yhq .container .content_lf .pro_content{
+    margin-top: 6px;
+    position: absolute;
+    left: 90px;
+    top:5px;
+}
+.yhq .pro_content .pro_info{
+    font-size: 13px;
+    display: block;
+    height: 24px;
+    line-height: 14px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+.yhq .pro_content .pro_price{
+    
+}
+.yhq .pro_content .pro_price .big_price{
+    color: #42b6ff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.yhq .pro_content .pro_price .price_info{
+    color: #43b6ff;
+    font-size: 12px;
+}
+.yhq .content_rf{
+    position: absolute;
+    top:0;
+    right:0;
+    background:#42b6ff;
+    width: 70px;
+    height: 80px;
+    border-left: 1.5px dashed #ffffff;
+}
+
+.yhq .content_rf .process_bar{
+    padding-top: 20px;
+    width: 50px;
+    height:10px;
+    margin:0 auto;
+}
+.yhq .content_rf .process_bar div {
+    width:100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #13a1fa;
+}
+.yhq .content_rf .process_bar span{
+    display: block;
+    border-radius: 5px;
+    width:66%;
+    height:10px;
+    background: #ffffff;
+}
+.yhq .content_rf .buy_much{
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: center;
+    height: 16px;
+    line-height: 16px;
+}
+.yhq .content_rf .get_it{
+    border-radius: 12px;
+    width:50px;
+    height: 20px;
+    background: #FFFFFF;
+    font-size: 10px;
+    line-height: 20px;
+    border: 2px solid #13a1fa;
+    margin:0 auto;
+    color: #43b6ff;
+    text-align: center;
+}
+.yhq .content_rf .had{
+    width: 70px;
+    height: 44px;
+    background: url('../img/gone.png') no-repeat center center;
+    background-size: 60px 44px;
+    margin-bottom: 10px;
+}
+.yhq .content_rf .use_it{
+    display: block;
+    border-radius: 12px;
+    width:50px;
+    height: 20px;
+    background: #ffec00;
+    font-size: 10px;
+    line-height: 20px;
+    border: 2px solid #13a1fa;
+    margin:0 auto;
+    color: #43b6ff;
+    text-align: center;
+
+}
+
+.yhq .content_rf .content_rf_box1{
+    display: block;
+}
+.yhq .content_rf .content_rf_box2{
+    display: none;
+}
+
+/*半圆遮罩*/
+.yhq li em{
+    display: block;
+    position: absolute;
+    height: 12px;
+    width:12px;
+    border-radius: 6px;
+    background: #f3f5f7;
+}
+.yhq .arch_top{
+    top: -6px;
+    right: 65px;
+}
+.yhq .arch_bottom{
+    bottom:-6px;
+    right:65px;
+}
