@@ -28,6 +28,7 @@ $('.fastLogin p').on('click',function () {
 
 // 登录按钮显示效果
 //input propertychange是时时检测输入框中内容的变化，而change()是在输入框失去焦点以后才检测内容的变化
+
 $('.import input').on('input propertychange',function () {
     var input1 = $('.securityCode input').val() !== '';
     var input2 = $('.username input').val() !== '';
