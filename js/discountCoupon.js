@@ -152,15 +152,28 @@ function categoryMove() {
         if ((endTime - startTime) < 200 && moveX == 0){
             // console.log(123)
             // 判断事件发生身上
-            if (event.target.tagName == 'SPAN'){
-                var target = event.target.parentNode;
-                //当前span为'active'状态
-                $(event.target).addClass('active').parent().siblings().children().removeClass('active');
-
-            }else if(event.target.tagName == 'LI'){
-                var target = event.target;
-                //当前span为'active'状态
+                if (event.target.tagName == 'SPAN'){
+                    var target = event.target.parentNode;
+                    //当前span为'active'状态
+                    $(event.target).addClass('active').parent().siblings().children().removeClass('active');
+                }else if(event.target.tagName == 'LI'){
+                    var target = event.target;
+                    //当前span为'active'状态
                 $(target).children().addClass('active').parent().siblings().children().removeClass('active')
+            }
+            /*如果此时分类面板是展开的,则隐藏*/
+                if($(".all-category").hasClass('active')){
+                angle += 180;
+                $(".bar_right").find('img').css({
+                    webkitTransform: "rotate(" + angle + "deg)",
+                    mozTransform: "rotate(" + angle + "deg)",
+                    msTransform: "rotate(" + angle + "deg)",
+                    oTransform: "rotate(" + angle + "deg)",
+                    transform: "rotate(" + angle + "deg)",
+                });
+                $(".all-category").removeClass('active');
+                $('.shade').height(0);
+                $(".all-category-wrap").hide(300);
             }
 
             //遮罩高度为0
@@ -267,14 +280,10 @@ function toggle_category() {
             // $(".all-category-wrap").height(0);//暂时还无法添加动画效果
 
         }else{
-            all_category.addClass('active')
+            all_category.addClass('active');
             $('.shade').height(document.body.clientHeight);
-            $(".all-category-wrap").show(300)
-
+            $(".all-category-wrap").show(300);
         }
-
-
-
     })
 }
 
@@ -305,7 +314,7 @@ function show_category(){
 }
 
 
-//分类表里点击相应事件
+//分类面板里点击相应事件
 function all_category() {
     $('.all-category li').on('click',function(){
         $(this).children('span').addClass('active').parent().siblings().children('span').removeClass('active');
