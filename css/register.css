@@ -75,6 +75,16 @@ body{
     border-color: #f23030;
     color: #f23030;
 }
+.page .registerPage .import .phoneNum p{
+    color: #f23030;
+    font-size: 12px;
+}
+
+/*设置密码*/
+.page .registerPage .import .password p{
+    color: #f23030;
+    font-size: 12px;
+}
 
 /*注册按钮*/
 .page .registerBtn{

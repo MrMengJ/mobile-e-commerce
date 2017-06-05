@@ -281,15 +281,16 @@ html {
 /*三个商品*/
 .secondKill .product_bot {
     width: 100%;
+    overflow: auto;
 }
 
 .secondKill .product_bot ul {
-    width: 100%;
+    /*width: 100%;*/
     padding: 10px 0;
 }
 
 .secondKill .product_bot ul li {
-    width: 33.333%;
+    /*width: 33.333%;*/
     float: left;
 }
 

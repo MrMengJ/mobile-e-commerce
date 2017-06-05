@@ -103,13 +103,15 @@ strong{
 .header .header_bar li:nth-of-type(2) span{
     background: url("../img/jd-sprites.png") no-repeat -60px -27px;
     background-size: 200px 200px;
-}.header .header_bar li:nth-of-type(3) span{
+}
+.header .header_bar li:nth-of-type(3) span{
      background: url("../img/jd-sprites.png") no-repeat -90px -27px;
      background-size: 200px 200px;
- }.header .header_bar li:nth-of-type(4) span{
+ }
+.header .header_bar li:nth-of-type(4) span{
       background: url("../img/jd-sprites.png") no-repeat -120px -27px;
       background-size: 200px 200px;
-  }
+}
 
   /*轮播图*/
 .banner{
@@ -194,7 +196,11 @@ strong{
     padding:.56rem;
     font-size: 0.5rem;
 }
-
+.phoneNumber P{
+    font-size: 12px;
+    color: #f23030;
+    margin: .32rem 0 0 .6rem;
+}
 
 /*冲值面值*/
 .value{

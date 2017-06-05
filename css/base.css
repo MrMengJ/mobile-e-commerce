@@ -1,6 +1,7 @@
 *,
 ::before,
-::after{
+::after,
+div{
     margin: 0;
     padding: 0;
 

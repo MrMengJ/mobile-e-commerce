@@ -111,7 +111,7 @@ body{
 }
 /*找回密码*/
 .page .findPsw{
-    display: block;
+    /*display: block;*/
     position: relative;
 }
 .page .findPsw span:first-child{
@@ -122,9 +122,9 @@ body{
      height: 22px;
  }
 .page .findPsw span:last-child{
-    position: absolute;
-    left: 25px;
-    top:2px;
+    position: relative;
+    left: 5px;
+    top:-5px;
 }
 
 /*快速注册*/

@@ -96,8 +96,6 @@ $(document).ready(function(){
     //     return priceA;
     //     console.log(priceA)
     // }
-
-
     // 选中效果
     var checkBtn = document.getElementsByClassName('check_box');
     for (var j = 0; j < checkBtn.length; j++) {
@@ -154,7 +152,8 @@ $('.changeNum_left').on('click', function () {
 //数量不可以为非正整数
 $(".changeNum input").blur(function () {
     var val = parseInt($(this).val());
-    if (val < 1) {
+    var trueNum = /^[0-9]*[1-9][0-9]$/;
+    if (!(trueNum.test($(this).val()))) {
         $(this).val(1)
         alert('选择数量不可以为非正整数喔')
     }

@@ -1,6 +1,7 @@
 $(document).ready(function () {
     banner();
 })
+
 $('.showHeaderBox').click(function () {
     $('.header_bar').toggle();
 })
@@ -29,7 +30,7 @@ function banner() {
             iNow=0;
         }
         showNumber.eq(iNow).trigger("click"); //模拟触发数字按钮的click
-    },2500); //2000为轮播的时间
+    },3000); //3000为轮播的时间
 
 }
 
@@ -55,10 +56,21 @@ $(window).resize(function () {
         //         iNow=0;
         //     }
         //     showNumber.eq(iNow).trigger("click"); //模拟触发数字按钮的click
-        // },2500); //2000为轮播的时间
-}
+        // },3500); //3000为轮播的时间
+})
 
-)
+//限制只能填入手机号码
+$('.phoneNumber input').blur(function () {
+    var truePhoneNum = /^1[3|4|5|7|8]\d{9}$/;
+    if(!(truePhoneNum.test($(this).val()))){
+        $('.phoneNumber p').text('请输入正确的手机号码')
+        $(this).val('');
+    }else{
+        $('.phoneNumber p').text('')
+    }
+})
+
+
 //nav块活动区切换
 $(".nav a").click(function () {
     $(this).addClass('active').parent().siblings().children().removeClass('active');
