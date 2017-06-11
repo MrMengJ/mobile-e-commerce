@@ -39,6 +39,9 @@ input,textarea{
 strong{
     font-weight:normal;
 }
+button{
+    outline: none;
+}
 
 /*浮动*/
 .fl{
