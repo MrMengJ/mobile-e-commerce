@@ -173,7 +173,7 @@ function categoryMove() {
                 });
                 $(".all-category").removeClass('active');
                 $('.shade').height(0);
-                $(".all-category-wrap").hide(300);
+                $(".all-category-wrap").slideUp(300);
             }
 
             //遮罩高度为0
@@ -275,14 +275,14 @@ function toggle_category() {
         if( all_category.hasClass('active')){
             all_category.removeClass('active');
             $('.shade').height(0);
-            $(".all-category-wrap").hide(300)
+            $(".all-category-wrap").slideUp(300)
             // $(".all-category-wrap").css('display','none')
             // $(".all-category-wrap").height(0);//暂时还无法添加动画效果
 
         }else{
             all_category.addClass('active');
             $('.shade').height(document.body.clientHeight);
-            $(".all-category-wrap").show(300);
+            $(".all-category-wrap").slideDown(300);
         }
     })
 }
@@ -309,7 +309,7 @@ function show_category(){
     $('.shade').on('click',function () {
         all_category.removeClass('active');
         $(this).height(0);
-        $(".all-category-wrap").hide(300);//暂时还无法添加动画效果
+        $(".all-category-wrap").slideUp(300);//暂时还无法添加动画效果
     })
 }
 
@@ -319,7 +319,7 @@ function all_category() {
     $('.all-category li').on('click',function(){
         $(this).children('span').addClass('active').parent().siblings().children('span').removeClass('active');
         $(".all-category").removeClass('active')
-        $(".all-category-wrap").hide(300);
+        $(".all-category-wrap").slideUp(300);
         $('.shade').height(0);
         var index = $(this).index();
         $('.bar_left li').eq(index).children('span').addClass('active').parent().siblings().children('span').removeClass('active');
