@@ -473,7 +473,6 @@ display: inline-block;
     position: fixed;
     left: 0;
     bottom: 0;
-
 }
 
 #footBar .footBar_content {
@@ -488,7 +487,7 @@ display: inline-block;
     display: inline-block;
     /*width:25%;*/
     /*width:25%为何不行呢？？*/
-    width: 23.5%;
+    width: 23%;
     height: 54px;
     text-align: center;
 }
